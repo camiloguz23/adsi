@@ -1,7 +1,94 @@
-section{
-    display: flex;
-}
+
 li{
     display: inline-block;
     margin-left: 20px;
+}
+
+
+
+
+
+
+
+/*  //// pagina estilo del parque del cafe  //// */
+ .pagina{
+     background-image: url(../imagenes/hoja.jpeg);
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+h3{
+    font-size: 40px;
+    color: red;
+}
+
+.contenedor{
+    display: flex;
+    
+}
+
+.encabezado{
+    background-color: rgba(236, 13, 13, 0.973);
+    height: 90px;
+    margin-top: -20px;
+    text-align: center;
+    color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-family: cursive;
+    
+
+}
+p{
+    font-weight: bold;
+    font-size: 30px;
+}
+img{
+    border-radius: 20px;
+    transition: all 2s;
+    
+
+}
+img:active{
+    transform: rotate(0deg) scale(2);
+    
+    position: relative;
+    left: -100px;
+    
+}
+section{
+    background-color: rgba(253, 251, 251, 0.397);
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin:4%;
+}
+
+@media screen and (max-width:500px){
+    body{
+        font-size: 25px;
+    }
+    img{
+        transition: none;
+    }
+    .contenedor{
+        flex-flow: column;
+        margin-left: 0;
+        
+    }
+    .encabezado{
+        height: 150px;
+        margin-right: -20px;
+    }
+
+        
+        
 }
