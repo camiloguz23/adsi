@@ -128,6 +128,7 @@ footer{
      background-size: cover;
      background-position: center;
  }
+ 
 .subtitulo1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -150,7 +151,7 @@ footer{
 .encabezado{
     background-color: rgba(236, 13, 13, 0.973);
     height: 90px;
-    margin-top: -20px;
+    margin-top: 2px;
     text-align: center;
     color: white;
     margin-left: -10px;
@@ -167,17 +168,15 @@ footer{
 .draw{
     border-radius: 20px;
     transition: all 2s;
-    
-
 }
-
-.draw:active{
+.draw:hover{
     transform: rotate(0deg) scale(2);
     
     position: relative;
     left: -100px;
     
 }
+
 .flexible{
     background-color: rgba(253, 251, 251, 0.397);
     padding: 10px;
@@ -186,13 +185,12 @@ footer{
     margin:4%;
 }
 
+
 @media screen and (max-width:500px){
     .pagina{
         font-size: 25px;
     }
-    .draw{
-        transition: none;
-    }
+    
     .contenedor{
         flex-flow: column;
         margin-left: 0;        
