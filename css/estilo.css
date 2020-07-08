@@ -1,16 +1,126 @@
+/* ///// ESTILO DE LA PAGINA INDEX  ///// */
 
-li{
-    display: inline-block;
-    margin-left: 20px;
+*{
+	margin:0px;
+	padding: 0px;
+}
+.cuerpo{
+	align-content:center;
+	font-family:helvetica;
+}
+.titulo {
+	font-size:50px;
+	text-align: center;
+}
+.subtitulo {
+	font-size:30px;
+	margin: 25px 0px;
+}
+.menu{
+	/*background: linear-gradient(130deg , #ffffff ,#006699 );*/
+	background-color: red;
+	padding: 20px 30px;
+	color:red;
+}
+.menu li{
+	display: inline-block;
+	color:#ffffff;
+	margin:0px 20px;
+}
+.menu li:hover{
+    color:#000000;
+    
 }
 
+.container{
+	width:80%;
+	margin:20px auto;
+	text-align:left;
+}
+.seccion{
+	width:70%;
+	float:left;
+}
+.seccion article{
+	font-size:1.3em;
+}
+.columna{
+	width:30%;
+	float:left; 
+}
+.redes{
+	width:40%;
+	margin:30px auto;
+}
+.redesimg{
+	width:40%;
+}
+.conctacto{
+	width:60% ;
+	margin:15px auto;
+	padding:15px;
+}
+.conctacto li{
+	padding:10px;
+	list-style: none;	
+}
+.conctacto h2{
+	color:#000000;
+	font-size:25px;
+}
+.conctacto a{
+	color:#000000;
+}
+.conctacto li:hover{
+	background-color:#000000;
+	color: #ffffff;
+}
+footer{
+	clear: both;	
+	background-color: rgba(	155,155,155,0.3);
+	font-size:25px;
+	text-align:center;
+	text-shadow:5px 5px 10px;
+	margin:20px;
+	margin-top: 2px solid #000000;
+	padding:15px;
+}
+ .carousel{
+	width:50%;
+	margin:30px auto;
+	overflow: hidden;
+}
+.carousel ul{
+	display: flex;
+	padding:0px;
+	width:400%;
+	height:300px;
+	animation: cambio 20s infinite;
+	animation-direction: alternate;
+}
+.carousel li{
+	width: 100%;
+	list-style: none;
+}
+.carousel img{
+	width:100%;
+	height:100%;
+}
+@keyframes cambio{
+	0% {margin-left: 0px;}
+	20%{margin-left: 0px;}
 
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
 
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
 
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
 
-
-
-/*  //// pagina estilo del parque del cafe  //// */
+/*  //// ESTILOS DE LA PAGINAS DE PARQUE DE CAFE, HACIENDA NAPOLES, CAÑO CRISTAL  //// */
  .pagina{
      background-image: url(../imagenes/hoja.jpeg);
      background-attachment: fixed;
@@ -18,7 +128,7 @@ li{
      background-size: cover;
      background-position: center;
  }
-.subtitulo{
+.subtitulo1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 50px;
@@ -46,27 +156,29 @@ li{
     margin-left: -10px;
     margin-right: -10px;
     font-family: cursive;
-    
 
 }
-p{
+
+.parrafoespecial{
     font-weight: bold;
     font-size: 30px;
 }
-img{
+
+.draw{
     border-radius: 20px;
     transition: all 2s;
     
 
 }
-img:active{
+
+.draw:active{
     transform: rotate(0deg) scale(2);
     
     position: relative;
     left: -100px;
     
 }
-section{
+.flexible{
     background-color: rgba(253, 251, 251, 0.397);
     padding: 10px;
     border-radius: 20px;
@@ -75,22 +187,29 @@ section{
 }
 
 @media screen and (max-width:500px){
-    body{
+    .pagina{
         font-size: 25px;
     }
-    img{
+    .draw{
         transition: none;
     }
     .contenedor{
         flex-flow: column;
-        margin-left: 0;
-        
+        margin-left: 0;        
     }
     .encabezado{
         height: 150px;
         margin-right: -20px;
     }
+    .menu li{
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
 
-        
+    }
+    .columna, .seccion{
+        clear: both;
+    }
+    
         
 }
