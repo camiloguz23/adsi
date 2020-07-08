@@ -28,6 +28,8 @@ li{
 .tercertitulo{
     font-size: 40px;
     color: red;
+    text-shadow: 2px 2px 3px black;
+    
 }
 
 .contenedor{
