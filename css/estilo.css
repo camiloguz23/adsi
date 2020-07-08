@@ -18,14 +18,14 @@ li{
      background-size: cover;
      background-position: center;
  }
-h2{
+.subtitulo{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 50px;
     color: white;
     text-shadow: 2px 2px 8px black;
 }
-h3{
+.tercertitulo{
     font-size: 40px;
     color: red;
 }
